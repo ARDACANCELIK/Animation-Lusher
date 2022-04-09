@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 2px solid red; */
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.compass {
+  height: 5rem;
+  background: rgba(12, 2, 2, 0.9);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+
+.compass-name {
+  font-size: 2.02rem;
+  text-transform: capitalize;
+  font-weight: 713;
+  color: white;
+  letter-spacing: 1.8px;
+}
+.compass-core {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 2rem;
+}
+
+.main-section {
+  min-height: calc(100vh - 5rem);
+  background: rgba(25, 11, 18);
+  position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .main-section {
+    background: linear-gradient(
+        to left,
+        rgba(25, 11, 18, 0),
+        rgba(25, 11, 18, 1)
+      ),
+      url("./Lushers.jpg") center/cover;
+  }
+}
+
+.main-center {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 12rem 0;
+  color: whitesmoke;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-center h1 {
+  letter-spacing: 1.8px;
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+p {
+  /* color: rgb(213, 222, 231);
+  display: block;
+  text-align: justify;
+  width: 300px; */
+  /* benim yaklaşımım p yi boxa çevirip sıkıştırdım */
+
+  max-width: 35em;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+  color: rgb(213, 222, 231);
+}
+
+.main-btn {
+  background: transparent;
+  padding: 0.6rem 1.25rem;
+  border: 1px solid #fff;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: 0.5rem;
+  animation: yollaasagıdan 5s ease-in-out 1;
+}
+}
+
+.nova {
+  min-height: 100vh;
+  background: red;
+}
+
+/* animations */
+
+.animation-up {
+  animation: yollayukarıdan 5s ease-in-out 1;
+}
+
+@keyframes yollayukarıdan {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes yollaasagıdan {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
